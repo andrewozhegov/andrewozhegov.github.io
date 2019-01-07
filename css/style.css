@@ -38,12 +38,18 @@ footer {
 
 /* Меню в шапке */
 
+.menu {
+    height: 100%;
+}
+
 .nav-menu {
     list-style: none;
+    margin: auto;
+    padding-top: 25px;
 }
 
 .nav-menu-item {
-    margin: 20px auto;
+    margin: auto;
 }
 
 .nav-menu-item a {
