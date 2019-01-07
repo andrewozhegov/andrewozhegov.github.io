@@ -214,7 +214,8 @@ a:hover {
 
 .grid figure p {
     letter-spacing: 1px;
-    font-size: 68.5%;
+    text-shadow: 0 0 7px #fff;
+
 }
 
 figure.effect-chico img {
@@ -231,7 +232,8 @@ figure.effect-chico:hover img {
 }
 
 figure.effect-chico figcaption {
-    padding: 3em;
+    display: flex;
+    padding: 1em;
 }
 
 figure.effect-chico figcaption::before {
@@ -240,7 +242,11 @@ figure.effect-chico figcaption::before {
     right: 30px;
     bottom: 30px;
     left: 30px;
-    border: 1px solid #07D6B3;
+    border: 3px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top right, #000 0%, transparent 60%);
+    -webkit-border-image: -webkit-linear-gradient(top right, #000 0%, transparent 60%);
+    border-image: linear-gradient(to bottom left, #000 0%, transparent 60%);
+    border-image-slice: 1;
     content: '';
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -254,14 +260,23 @@ figure.effect-chico p {
 }
 
 figure.effect-chico h2 {
-    padding: 20% 0 20px 0;
+    text-align: left;
+    color: #EBF0F3;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 40px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    z-index: 6;
+    position: absolute;
+    bottom: 7px;
 }
 
 figure.effect-chico p {
+    position: static;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 80%;
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
+    align-self: center;
 }
 
 figure.effect-chico:hover figcaption::before,
