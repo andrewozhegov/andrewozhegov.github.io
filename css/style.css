@@ -274,6 +274,7 @@ figure.effect-chico h2 {
     z-index: 6;
     position: absolute;
     bottom: 7px;
+    max-width: 70%;
 }
 
 figure.effect-chico p {
