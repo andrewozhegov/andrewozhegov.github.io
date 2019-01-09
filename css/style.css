@@ -96,14 +96,46 @@ a:hover {
     color: #37352F;
 }
 
-.iphone {
+.ipad {
     display: block;
-    padding: 30px;
+    padding: 40px 0 0 0;
 }
 
-.iphone img {
+.ipad img {
     width: 100%
 }
+
+.ipad > .ipad-content {
+    margin: 80px 0 0 0;
+    padding: 0 55px;
+    width: 100%;
+    position: absolute;
+    z-index: 7;
+}
+
+.ipad-content > .logo {
+    text-align: center;
+    color: rgba(252,252,252,0.84);
+}
+
+.ipad-content > .img-block {
+    max-width: 95%;
+    margin: 5px auto;
+}
+
+.ipad-content > .img-block-sm {
+    width: 80%;
+}
+
+.ipad-content > .img-block-md {
+    width: 90%;
+    margin-top: -30%
+}
+
+.ipad-content > .img-block-bg {
+    margin-top: -30%
+}
+
 
 /* Плиточное меню */
 
@@ -299,7 +331,7 @@ figure.effect-chico:hover p {
 
 .edge--both--reverse {
     position: relative;
-    z-index: 1;
+    z-index: 7;
 }
 .edge--both--reverse:before, .edge--both--reverse:after {
     background: inherit;
