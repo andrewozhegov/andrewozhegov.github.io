@@ -86,9 +86,11 @@ a:hover {
     margin-bottom: 30px;
 }
 
+.icons {
+    padding: 0 15%;
+}
 .icon {
     list-style: none;
-    margin-right: 50px;
 }
 
 .icon a {
