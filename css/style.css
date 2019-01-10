@@ -108,8 +108,8 @@ a:hover {
 }
 
 .ipad > .ipad-content {
-    margin: 80px 0 0 0;
-    padding: 0 55px;
+    margin-top: 14%;
+    padding: 0 10%;
     width: 100%;
     position: absolute;
     z-index: 7;
@@ -152,7 +152,7 @@ a:hover {
     margin: 10px;
 }
 
-.design-menu .col-7 {
+.design-menu .horiz-block {
     color: #555B6E;
     background: #EBF0F3;
     width: 100%;
@@ -164,7 +164,7 @@ a:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.design-menu .col-4 {
+.design-menu .vert-block {
     color: #555B6E;
     background: #EBF0F3;
     width: 100%;
@@ -174,6 +174,16 @@ a:hover {
     box-sizing: border-box;
     background-size: cover;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.design-menu > .init-el-frst {
+    margin-left: 2.9em;
+}
+.design-menu > .init-el-scnd {
+    margin-left: -2.9em;
+}
+.design-menu > .init-el-thrd {
+    margin-left: 2.9em;
 }
 
 /* EFFECT CHICO */
@@ -373,4 +383,181 @@ figure.effect-chico:hover p {
     font-family: 'Poppins', sans-serif;
     color: #37352F;
     letter-spacing: 0.1em;
+}
+
+/* ADAPTIVITY */
+
+@media screen and (max-width:  1199px)
+{
+    /*header*/
+
+    .intro h1 {
+        font-size:45px;
+    }
+    .intro p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:  991px)
+{
+    /* header */
+
+    .logo {
+        text-align: center;
+    }
+    .nav-menu {
+        padding: 25px;
+    }
+    .nav-menu-item a {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    /* infoboard */
+
+    .intro h1 {
+        font-size:34px;
+    }horiz-block
+    .intro p {
+        font-size: 21px;
+    }
+    .icon > a {
+        font-size: 45px;
+    }
+    .ipad-content > .logo {
+        font-size: 33px;
+    }
+
+    /* main menu */
+
+    .block h1 {
+        font-size: 30px;
+    }
+    .design-menu > .init-el-frst {
+        margin-left: 27px;
+    }
+    .design-menu > .init-el-scnd {
+        margin-left: -27px;
+    }
+    .design-menu > .init-el-thrd {
+        margin-left: 27px;
+    }
+    .design-menu > .vert-block {
+        padding: 10px;
+    }
+    .design-menu > .horiz-block {
+        padding: 10px;
+    }
+    figure.effect-chico figcaption {
+        padding: 0.6em;
+
+    }
+    figure.effect-chico h2 {
+        font-size: 25px;
+    }
+    .grid figure figcaption {
+        font-size: 0.8em;
+    }
+    figure.effect-chico figcaption::before {
+        position: absolute;
+        top:15px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        border: 2px solid transparent;
+        -moz-border-image: -moz-linear-gradient(top right, #000 0%, transparent 60%);
+        -webkit-border-image: -webkit-linear-gradient(top right, #000 0%, transparent 60%);
+        border-image: linear-gradient(to bottom left, #000 0%, transparent 60%);
+        border-image-slice: 1;
+        content: '';
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width:  767px)
+{
+    /* infoboard */
+
+    .intro {
+        padding: 60px 15px 40px 15px;
+        text-align: center;
+    }
+    .intro h1 {
+        font-size: 40px;
+    }
+    .ipad {
+        padding: 0;
+    }
+    .ipad-content > .logo {
+        font-size: 33px;
+    }
+
+    /* main menu */
+
+    .block h1 {
+        font-size: 25px;
+        padding: 30px 10px;
+    }
+    .design-menu > .init-el-frst {
+        margin-left: 10px;
+    }
+    .design-menu > .init-el-scnd {
+        margin-left: 10px;
+    }
+    .design-menu > .init-el-thrd {
+        margin-left: 10px;
+    }
+    .design-menu > .vert-block {
+        max-height:500px;
+    }
+    figure.effect-chico h2 {
+        font-size: 30px;
+    }
+    .grid figure figcaption {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:  575px)
+{
+    /* infoboard */
+
+    .logo {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .nav-menu {
+        padding: 10px;
+    }
+    .nav-menu-item a {
+        font-size: 18px;
+    }
+    .intro {
+        padding: 30px 5px 20px 5px;
+        text-align: center;
+    }
+    .intro h1 {
+        font-size: 30px;
+    }
+    .intro p {
+        font-size: 20px;
+    }
+    .icons {
+        padding: 0;
+    }
+    .ipad {
+        padding: 0;
+    }
+    .ipad-content > .logo {
+        margin-top: 5px;
+    }
+    .block h1 {
+        font-size: 15px;
+        padding: 15px 5px 0px 5px;
+    }
+    .design-menu > .vert-block {
+        max-height:300px;
+    }
 }
